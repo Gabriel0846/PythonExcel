@@ -1,7 +1,7 @@
 import openpyxl
 
 # criar uma planilha (book)
-book = openpyxl.workbook()
+book = openpyxl.Workbook()
 
 # visualizar paginas existentes
 print(book.sheetnames)
@@ -15,3 +15,6 @@ frutas_page.append(['Banana', '5', 'R$3,90'])
 frutas_page.append(['Fruta 2', '2', 'R$15,90'])
 frutas_page.append(['Fruta 3', '10', 'R$30,90'])
 frutas_page.append(['Fruta 4', '2', 'R$50,50'])
+
+# salva a planilha
+book.save('Planilha de Compras.xlsx')
